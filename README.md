@@ -9,3 +9,4 @@
 
 ## Contributors
 * Nicola Tudino
+* Paolo De Benedittis
