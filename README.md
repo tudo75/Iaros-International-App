@@ -12,3 +12,4 @@
 * Paolo De Benedittis
 * Edoardo Dianti
 * Francesco Marino
+* Giuseppe Marzillo
