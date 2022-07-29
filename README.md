@@ -9,4 +9,8 @@
 
 ## Contributors
 * Nicola Tudino
+<<<<<<< Updated upstream
 * Paolo De Benedittis
+=======
+* Edoardo Dianti
+>>>>>>> Stashed changes
