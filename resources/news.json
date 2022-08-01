@@ -1,5 +1,10 @@
 [
     {
+        "titolo": "<h3>notizia 0</h3>",
+        "corpo": "<div>Questo è il corpo della notizia</div>",
+        "data": "<small>01/08/2022</small>"
+    },
+    {
         "titolo": "<h3>prima notizia</h3>",
         "corpo": "<div>Questo è il corpo della prima notizia</div>",
         "data": "<small>21/07/2022</small>"
