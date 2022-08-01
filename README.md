@@ -13,3 +13,4 @@
 * Edoardo Dianti
 * Francesco Marino
 * Giuseppe Marzillo
+* Stefania Caporicci
