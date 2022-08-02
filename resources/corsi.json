@@ -3,65 +3,50 @@
         {
             "titolo": "PROGETTISTA DI PRODOTTI MULTIMEDIALI: SVILUPPO APP PER LA PA ED IL TURISMO (CUP D36B19000720009)",
             "data_consegna_moduli": "10/10/2019",
-            "files": [
-                {
-                    "titolo": "SCHEDA CORSO",
-                    "titolo_url": "Scarica la scheda",
-                    "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/PROGETTISTA-PRODOTTI-MULTIMEDIALI-ANDROID-.pdf"
-                },
-                {
-                    "titolo": "BANDO CORSO",
-                    "titolo_url": "Scarica il bando",
-                    "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/bando-sviluppatore-app-android-.pdf"
-                },
-                {
-                    "titolo": "SCHEDA ISCRIZIONE",
-                    "titolo_url": "Scarica la scheda d'iscrizione",
-                    "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/Scheda-iscrizione_Progettista-prodotti-multimediali-1.pdf"
-                }
-            ]
+            "scheda_corso": {
+                "titolo_url": "Scarica la scheda",
+                "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/PROGETTISTA-PRODOTTI-MULTIMEDIALI-ANDROID-.pdf"
+            },
+            "scheda_bando": {
+                "titolo_url": "Scarica il bando",
+                "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/bando-sviluppatore-app-android-.pdf"
+            },
+            "scheda_iscrizione": {
+                "titolo_url": "Scarica la scheda d'iscrizione",
+                "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/Scheda-iscrizione_Progettista-prodotti-multimediali-1.pdf"
+            }
         },
         {
             "titolo": "TECNICO DEL MARKETING TURISTICO Repertorio delle Professioni 6.20.69.01 - CUP D36B19000740009",
             "data_consegna_moduli": "10/10/2019",
-            "files": [
-                {
-                    "titolo": "SCHEDA CORSO",
-                    "titolo_url": "Scarica la scheda",
-                    "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/TECNICO-DEL-MARKETING-TURISTICO-.pdf"
-                },
-                {
-                    "titolo": "BANDO CORSO",
-                    "titolo_url": "Scarica il bando",
-                    "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/bando-MKTG-Turistico-.pdf"
-                },
-                {
-                    "titolo": "SCHEDA ISCRIZIONE",
-                    "titolo_url": "Scarica la scheda d'iscrizione",
-                    "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/Scheda-iscrizione_Tecnico-MKTG-Turistico.pdf"
-                }
-            ]
+            "scheda_corso": {
+                "titolo_url": "Scarica la scheda",
+                "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/TECNICO-DEL-MARKETING-TURISTICO-.pdf"
+            },
+            "scheda_bando": {
+                "titolo_url": "Scarica il bando",
+                "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/bando-MKTG-Turistico-.pdf"
+            },
+            "scheda_iscrizione": {
+                "titolo_url": "Scarica la scheda d'iscrizione",
+                "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/Scheda-iscrizione_Tecnico-MKTG-Turistico.pdf"
+            }
         },
         {
             "titolo": "TECNICO DELLA VALORIZZAZIONE DEI BENI/PRODOTTI CULTURALI: MANAGER DEI BENI ENO-GASTRONOMICI (CUPD36B19000710009)",
             "data_consegna_moduli": "10/10/2019",
-            "files": [
-                {
-                    "titolo": "SCHEDA CORSO",
-                    "titolo_url": "Scarica la scheda",
-                    "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/TECNICO-DELLA-VALORIZZAZIONE-DEI-BENIPRODOTTI-CULTRALI-.pdf"
-                },
-                {
-                    "titolo": "BANDO CORSO",
-                    "titolo_url": "Scarica il bando",
-                    "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/bando-sviluppatore-app-android-.pdf"
-                },
-                {
-                    "titolo": "SCHEDA ISCRIZIONE",
-                    "titolo_url": "Scarica la scheda d'iscrizione",
-                    "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/Scheda-iscrizione_Progettista-prodotti-multimediali-1.pdf"
-                }
-            ]
+            "scheda_corso": {
+                "titolo_url": "Scarica la scheda",
+                "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/TECNICO-DELLA-VALORIZZAZIONE-DEI-BENIPRODOTTI-CULTRALI-.pdf"
+            },
+            "scheda_bando": {
+                "titolo_url": "Scarica il bando",
+                "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/bando-sviluppatore-app-android-.pdf"
+            },
+            "scheda_iscrizione": {
+                "titolo_url": "Scarica la scheda d'iscrizione",
+                "url": "https://www.iarosinternational.com/wp-content/uploads/2019/11/Scheda-iscrizione_Progettista-prodotti-multimediali-1.pdf"
+            }
         }
     ],
     "corsi_liberi": [
