@@ -1,0 +1,27 @@
+[
+    {
+        "titolo": "notizia 1111",
+        "corpo": "Questo è il corpo della notizia",
+        "data": "01/08/2022"
+    },
+    {
+        "titolo": "prima notizia",
+        "corpo": "Questo è il corpo della prima notizia",
+        "data": "21/07/2022</small>"
+    },
+    {
+        "titolo": "seconda notizia",
+        "corpo": "Questo è il corpo della seconda notizia",
+        "data": "20/07/2022</small>"
+    },
+    {
+        "titolo": "terza notizia",
+        "corpo": "Questo è il corpo della terza notizia",
+        "data": "19/07/2022</small>"
+    },
+    {
+        "titolo": "quarta notizia",
+        "corpo": "Questo è il corpo della quarta notizia",
+        "data": "18/07/2022</small>"
+    }
+]
