@@ -1,4 +1,4 @@
-package com.iarosinternational.corsoandroid.app.ui.notifications;
+package com.iarosinternational.corsoandroid.app.ui.contacts;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,21 +10,20 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.iarosinternational.corsoandroid.app.R;
-import com.iarosinternational.corsoandroid.app.databinding.FragmentNotificationsBinding;
+import com.iarosinternational.corsoandroid.app.databinding.FragmentContactsBinding;
 
-public class NotificationsFragment extends Fragment {
+public class ContactsFragment extends Fragment {
 
-    private FragmentNotificationsBinding binding;
+    private FragmentContactsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+        binding = FragmentContactsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNotifications;
-
-        textView.setText(R.string.title_notifications);
+        final TextView textView = binding.textDashboard;
+        textView.setText(R.string.title_contacts);
 
         return root;
     }

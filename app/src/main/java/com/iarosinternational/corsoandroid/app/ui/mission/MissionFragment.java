@@ -1,4 +1,4 @@
-package com.iarosinternational.corsoandroid.app.ui.dashboard;
+package com.iarosinternational.corsoandroid.app.ui.mission;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,20 +10,20 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.iarosinternational.corsoandroid.app.R;
-import com.iarosinternational.corsoandroid.app.databinding.FragmentDashboardBinding;
+import com.iarosinternational.corsoandroid.app.databinding.FragmentMissionBinding;
 
-public class DashboardFragment extends Fragment {
+public class MissionFragment extends Fragment {
 
-    private FragmentDashboardBinding binding;
+    private FragmentMissionBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        binding = FragmentMissionBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-        textView.setText(R.string.title_dashboard);
+        final TextView textView = binding.textMission;
+        textView.setText(R.string.title_mission);
 
         return root;
     }

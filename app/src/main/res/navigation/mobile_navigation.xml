@@ -12,14 +12,20 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.iarosinternational.corsoandroid.app.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_courses"
+        android:name="com.iarosinternational.corsoandroid.app.ui.courses.CoursesFragment"
+        android:label="@string/title_courses"
+        tools:layout="@layout/fragment_courses" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.iarosinternational.corsoandroid.app.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_contacts"
+        android:name="com.iarosinternational.corsoandroid.app.ui.contacts.ContactsFragment"
+        android:label="@string/title_contacts"
+        tools:layout="@layout/fragment_contacts" />
+
+    <fragment
+        android:id="@+id/navigation_mission"
+        android:name="com.iarosinternational.corsoandroid.app.ui.mission.MissionFragment"
+        android:label="@string/title_mission"
+        tools:layout="@layout/fragment_mission" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.iarosinternational.corsoandroid.app.ui.home;
+package com.iarosinternational.corsoandroid.app.ui.courses;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -12,27 +12,28 @@ import androidx.fragment.app.Fragment;
 
 import com.iarosinternational.corsoandroid.app.JsonTask;
 import com.iarosinternational.corsoandroid.app.R;
-import com.iarosinternational.corsoandroid.app.databinding.FragmentHomeBinding;
+import com.iarosinternational.corsoandroid.app.databinding.FragmentCoursesBinding;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 
-public class HomeFragment extends Fragment implements JsonTask.AsyncResponse {
+public class CoursesFragment extends Fragment implements JsonTask.AsyncResponse {
 
-    private FragmentHomeBinding binding;
+    private FragmentCoursesBinding binding;
 
-    private final static String JSON_URL_NEWS = "https://raw.githubusercontent.com/tudo75/Iaros-International-App/main/resources/news_iaros.json";
+    private final static String JSON_URL_CORSI = "https://raw.githubusercontent.com/tudo75/Iaros-International-App/main/resources/corsi.json";
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentCoursesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        textView.setText(R.string.title_home);
+        final TextView textView = binding.textNotifications;
 
-        new JsonTask(this).execute(JSON_URL_NEWS);
+        textView.setText(R.string.title_courses);
+
+        new JsonTask(this).execute(JSON_URL_CORSI);
 
         return root;
     }
@@ -52,7 +53,7 @@ public class HomeFragment extends Fragment implements JsonTask.AsyncResponse {
     @Override
     public void processFinish(String result) {
         try {
-            JSONArray news = new JSONArray(result);
+            JSONArray courses = new JSONArray(result);
         } catch (JSONException e) {
             Log.e("JSON error", e.getMessage());
         }
