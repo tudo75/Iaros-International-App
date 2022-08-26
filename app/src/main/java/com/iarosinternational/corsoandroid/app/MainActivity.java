@@ -1,7 +1,9 @@
 package com.iarosinternational.corsoandroid.app;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toolbar;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -33,8 +35,11 @@ public class MainActivity extends AppCompatActivity {
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavContro
+        NavigationUI.setupWithNavController(binding.navView, navController);
+
+        ActionBar bar = this.getActionBar();
         
+
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
         sendIntent.putExtra(Intent.EXTRA_TEXT, "Condividi l'App.");
@@ -42,6 +47,5 @@ public class MainActivity extends AppCompatActivity {
 
         Intent shareIntent = Intent.createChooser(sendIntent, null);
         startActivity(shareIntent);
-
     }
 }
