@@ -29,8 +29,6 @@ public class HomeFragment extends Fragment implements JsonTask.AsyncResponse {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        textView.setText(R.string.title_home);
 
         new JsonTask(this).execute(JSON_URL_NEWS);
 
