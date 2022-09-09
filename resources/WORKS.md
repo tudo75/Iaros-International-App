@@ -30,4 +30,4 @@ Divisione dei compiti per lo sviluppo delle varie parti del progetto dell'app Ia
 * Giuseppe -> Backend + Layout Contatti
 * Davide -> Backend + Layout Chi Siamo
 * Gaetano -> Layout delle sezioni Home e Corsi
-* Luigi -> Integrazione delle stringhe e dimensioni per omogenizzare le varie parti
+* Luigi -> ~~Integrazione delle stringhe e dimensioni per omogenizzare le varie parti~~ Layout della sezione relativa alla funzionalità di ricerca
