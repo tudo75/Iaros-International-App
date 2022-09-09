@@ -33,6 +33,7 @@
 * [App Bar Styling](https://material.io/components/app-bars-top/android#regular-top-app-bar)
 * [Cards Styling](https://material.io/components/cards)
 * [Theming a bottom navigation bar](https://material.io/components/bottom-navigation/android#theming-a-bottom-navigation-bar)
+* blu del logo #285193
 
 ## Creative Commons image sites
 
