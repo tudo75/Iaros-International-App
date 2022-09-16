@@ -2,9 +2,4 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.iarosinternational.bottomnavigation.MainActivity">
-    <item
-        android:id="@+id/action_privacy"
-        android:icon="@drawable/ic_privacy_white_24dp"
-        android:title="@string/title_privacy"
-        app:showAsAction="ifRoom" />
 </menu>

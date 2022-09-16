@@ -51,6 +51,10 @@
         <item name="android:padding">0dp</item>
         <item name="android:paddingHorizontal">15dp</item>
         <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:textAlignment">center</item>
     </style>
 
     <style name="Theme.IarosInternational.Text.title_home"
