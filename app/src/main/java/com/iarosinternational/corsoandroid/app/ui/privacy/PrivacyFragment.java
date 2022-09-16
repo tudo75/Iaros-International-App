@@ -23,7 +23,7 @@ public class PrivacyFragment extends Fragment {
         binding = FragmentPrivacyBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
+        final TextView textView = binding.textPrivacy;
         textView.setText(R.string.title_privacy);
 
         return root;
