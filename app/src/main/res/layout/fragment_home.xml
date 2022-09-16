@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-
     <TextView
         android:id="@+id/text_home"
         style="@style/Theme.IarosInternational.Text.title_home"
