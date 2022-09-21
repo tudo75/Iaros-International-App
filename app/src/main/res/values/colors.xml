@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blu_iaros">#285193</color>
     <color name="verde_iaros">#9cb073</color>
+    <color name="gray_lighter">#EFEFEF</color>
 </resources>
