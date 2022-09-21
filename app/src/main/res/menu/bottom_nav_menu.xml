@@ -21,4 +21,9 @@
         android:icon="@drawable/ic_mission_black_24dp"
         android:title="@string/title_mission" />
 
+    <item
+        android:id="@+id/navigation_privacy"
+        android:icon="@drawable/ic_privacy_white_24dp"
+        android:title="@string/title_privacy" />
+
 </menu>

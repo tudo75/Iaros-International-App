@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_courses,
-                R.id.navigation_contacts, R.id.navigation_mission)
+                R.id.navigation_contacts, R.id.navigation_mission,
+                R.id.navigation_privacy)
                 .build();
         navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
@@ -51,10 +52,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_privacy:
-                navController.navigate(R.id.navigation_privacy);
-                return true;
-
             default:
                 return super.onOptionsItemSelected(item);
         }
