@@ -4,6 +4,7 @@
     <string name="title_contacts">Contatti</string>
     <string name="title_courses">Corsi</string>
     <string name="title_mission">Chi siamo</string>
+    <string name="title_privacy">Privacy</string>
 
     <string name="action_share">Share</string>
 </resources>

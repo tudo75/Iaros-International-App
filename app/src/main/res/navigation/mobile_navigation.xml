@@ -28,4 +28,10 @@
         android:name="com.iarosinternational.corsoandroid.app.ui.mission.MissionFragment"
         android:label="@string/title_mission"
         tools:layout="@layout/fragment_mission" />
+
+    <fragment
+        android:id="@+id/navigation_privacy"
+        android:name="com.iarosinternational.corsoandroid.app.ui.privacy.PrivacyFragment"
+        android:label="@string/title_privacy"
+        tools:layout="@layout/fragment_privacy" />
 </navigation>

@@ -4,17 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.contacts.ContactsFragment">
+    tools:context=".ui.privacy.PrivacyFragment">
 
     <TextView
-        android:id="@+id/text_dashboard"
-        style="@style/Theme.IarosInternational.Text.title_contacts"
+        android:id="@+id/text_privacy"
+        style="@style/Theme.IarosInternational.Text.title_privacy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
