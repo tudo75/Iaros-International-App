@@ -3,22 +3,27 @@
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/fi_rs_home"
         android:title="@string/title_home" />
 
     <item
         android:id="@+id/navigation_courses"
-        android:icon="@drawable/ic_courses_black_24dp"
+        android:icon="@drawable/fi_rs_graduation_cap"
         android:title="@string/title_courses" />
 
     <item
         android:id="@+id/navigation_contacts"
-        android:icon="@drawable/ic_contacts_black_24dp"
+        android:icon="@drawable/fi_rs_address_book"
         android:title="@string/title_contacts" />
 
     <item
         android:id="@+id/navigation_mission"
-        android:icon="@drawable/ic_mission_black_24dp"
+        android:icon="@drawable/fi_rs_users"
         android:title="@string/title_mission" />
+
+    <item
+        android:id="@+id/navigation_privacy"
+        android:icon="@drawable/fi_rs_shield_exclamation"
+        android:title="@string/title_privacy" />
 
 </menu>

@@ -21,6 +21,7 @@
 * [ConstraintLayout](https://developer.android.com/training/constraint-layout)
 * [CardView](https://developer.android.com/guide/topics/ui/layout/cardview)
 * [RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview)
+* [Intent Actions](https://developer.android.com/guide/components/intents-filters)
 
 ## Material Theme
 
