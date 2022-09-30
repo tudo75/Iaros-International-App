@@ -40,8 +40,6 @@ public class HomeFragment extends Fragment implements JsonTask.AsyncResponse {
 
         newsList = new ArrayList<News>();
 
-        Log.e("Breakpoint Iaros App", "start JsonTask");
-
         new JsonTask(this).execute(JSON_URL_NEWS);
 
         /*
@@ -94,15 +92,6 @@ public class HomeFragment extends Fragment implements JsonTask.AsyncResponse {
 
             news_adapter.notifyDataSetChanged();
 
-            String debugNewsList = "";
-            for(int i=0; i < newsList.size(); i++) {
-                News tempNews = newsList.get(i);
-                String riga = "" + i + ": " + tempNews.getTitolo() + "\n";
-
-                debugNewsList += riga;
-            }
-
-            Log.e("Breakpoint Iaros App", "newsList created -> " + debugNewsList);
         } catch (JSONException e) {
             Log.e("JSON error", e.getMessage());
         }
