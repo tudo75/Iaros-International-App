@@ -11,19 +11,19 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView_titolo"
+            android:id="@+id/homeNewsTitolo"
             style="@style/Theme.IarosInternational.Text.title_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/textView_corpo"
+            android:id="@+id/homeNewsCorpo"
             style="@style/Theme.IarosInternational.Text.title_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/textView_data"
+            android:id="@+id/homeNewsData"
             style="@style/Theme.IarosInternational.Text.title_home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
