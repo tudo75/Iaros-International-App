@@ -76,9 +76,6 @@ public class HomeFragment extends Fragment implements JsonTask.AsyncResponse {
         try {
             JSONArray news = new JSONArray(result);
 
-            final TextView debugTv = binding.debugTv;
-            debugTv.setText(result);
-
             //Ciclo l'array json news
             for(int i=0; i<news.length(); i++) {
                 //per ogni elemento dell'array inizializzo un oggetto News e setto tutti i suoi attributi
