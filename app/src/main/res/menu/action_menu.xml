@@ -4,8 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.iarosinternational.corsoandroid.app.MainActivity">
     <item
-        android:id="@+id/share"
+        android:id="@+id/action_share"
+        android:icon="@drawable/fi_rs_share"
         android:orderInCategory="100"
         android:title="@string/action_share"
         app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/fi_rs_search"
+        android:orderInCategory="100"
+        android:title="@string/action_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
 </menu>

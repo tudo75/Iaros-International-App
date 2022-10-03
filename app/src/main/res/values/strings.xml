@@ -6,7 +6,9 @@
     <string name="title_mission">Chi siamo</string>
     <string name="title_privacy">Privacy</string>
 
-    <string name="action_share">Share</string>
+    <string name="action_share">Condividi</string>
+    <string name="action_search">Cerca</string>
+
     <string name="contatti_email">info@iarosmolise.it</string>
     <string name="contatti_email_subject">Gestione contatto dall\'app</string>
     <string name="contatti_phone">0874418779</string>
