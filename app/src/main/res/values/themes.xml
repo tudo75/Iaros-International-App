@@ -80,7 +80,8 @@
 
     <style name= "Theme.IarosInternational.CardView" parent="CardView">
         <item name="cardCornerRadius">@dimen/card_corner_radius</item>
-        <item name="android:layout_margin">@dimen/card_margin</item>
+        <item name="android:layout_marginHorizontal">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginVertical">@dimen/card_margin_vertical</item>
         <item name="contentPadding">@dimen/card_padding</item>
         <item name="cardElevation">@dimen/card_elevation</item>
     </style>
