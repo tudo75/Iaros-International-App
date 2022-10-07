@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.iarosinternational.corsoandroid.app.JsonTask;
 import com.iarosinternational.corsoandroid.app.databinding.FragmentHomeBinding;
@@ -24,13 +26,14 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class HomeFragment extends Fragment implements JsonTask.AsyncResponse {
+public class HomeFragment extends Fragment implements JsonTask.AsyncResponse, SwipeRefreshLayout.OnRefreshListener {
 
     private FragmentHomeBinding binding;
     private ArrayList<News> newsList;
     private final static String JSON_URL_NEWS = "https://raw.githubusercontent.com/tudo75/Iaros-International-App/main/resources/news_iaros.json";
     private RecyclerView contenitore_news;
     private NewsAdapter news_adapter;
+    private ProgressBar newsSpinner;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -46,6 +49,9 @@ public class HomeFragment extends Fragment implements JsonTask.AsyncResponse {
          1) recupero recyclerview inizializzo
          2) Passareal recyclerview la lista popolo news
          */
+
+        binding.newsSwipeRefresh.setOnRefreshListener(HomeFragment.this);
+
         contenitore_news = binding.contenitoreNews;
         news_adapter = new NewsAdapter(newsList);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
@@ -53,6 +59,9 @@ public class HomeFragment extends Fragment implements JsonTask.AsyncResponse {
         contenitore_news.setItemAnimator(new DefaultItemAnimator());
         //contenitore_news.addItemDecoration(new DividerItemDecoration(getContext(), LinearLayoutManager.VERTICAL));
         contenitore_news.setAdapter(news_adapter);
+        contenitore_news.setVisibility(View.GONE);
+
+        newsSpinner = binding.newsSpinner;
 
         return root;
     }
@@ -74,6 +83,7 @@ public class HomeFragment extends Fragment implements JsonTask.AsyncResponse {
         try {
             JSONArray news = new JSONArray(result);
 
+            newsList.clear();
             //Ciclo l'array json news
             for(int i=0; i<news.length(); i++) {
                 //per ogni elemento dell'array inizializzo un oggetto News e setto tutti i suoi attributi
@@ -91,9 +101,17 @@ public class HomeFragment extends Fragment implements JsonTask.AsyncResponse {
             }
 
             news_adapter.notifyDataSetChanged();
+            binding.newsSwipeRefresh.setRefreshing(false);
 
+            newsSpinner.setVisibility(View.GONE);
+            contenitore_news.setVisibility(View.VISIBLE);
         } catch (JSONException e) {
             Log.e("JSON error", e.getMessage());
         }
+    }
+
+    @Override
+    public void onRefresh() {
+        new JsonTask(this).execute(JSON_URL_NEWS);
     }
 }
