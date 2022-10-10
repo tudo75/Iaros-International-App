@@ -5,4 +5,18 @@
     <string name="title_courses">Corsi</string>
     <string name="title_mission">Chi siamo</string>
     <string name="title_privacy">Privacy</string>
+
+    <string name="action_share">Condividi</string>
+    <string name="action_search">Cerca</string>
+
+    <string name="contatti_email">info@iarosmolise.it</string>
+    <string name="contatti_email_subject">Gestione contatto dall\'app</string>
+    <string name="contatti_phone">0874418779</string>
+    <string name="contatti_instagram">https://www.instagram.com/iaros_international/</string>
+    <string name="contatti_facebook">https://www.facebook.com/IAROSInternational</string>
+    <string name="contatti_pagina">www.iarosinternational.com</string>
+    <string name="contatti_pagina_url">http://www.iarosinternational.com/</string>
+    <string name="contatti_address">Via Leopardi, 235\n86100 Campobasso (CB)</string>
+    <string name="contatti_address_url">https://www.google.com/maps?q=Via Leopardi, 235 86100 Campobasso (CB)</string>
+
 </resources>
