@@ -95,6 +95,12 @@ public class CorsoAdapter extends RecyclerView.Adapter<CorsoAdapter.ListItemHold
         return mCorsoList.size();
     }
 
+    public void setFilter (ArrayList<Corso> searchResultList) {
+        mCorsoList.clear();
+        mCorsoList.addAll(searchResultList);
+        notifyDataSetChanged();
+    }
+
     public class ListItemHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView mTitolo;
