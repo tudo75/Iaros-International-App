@@ -22,9 +22,6 @@ public class MissionFragment extends Fragment {
         binding = FragmentMissionBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textMission;
-        textView.setText(R.string.title_mission);
-
         return root;
     }
 
