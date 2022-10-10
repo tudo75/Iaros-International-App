@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
 import android.widget.ImageView;
+import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,28 +32,28 @@ public class ContactsFragment extends Fragment {
         binding = FragmentContactsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView contatti_address = binding.contattiAddress;
-        contatti_address.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick (View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(getString(R.string.contatti_address_url)));
-                if (intent.resolveActivity(getActivity().getPackageManager()) !=null) {
-                    startActivity(intent);
-                }
-                //Toast.makeText(getContext(), getText(R.string.contatti_address).toString(), Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
-        final TextView contatti_pagina = binding.contattiPagina;
-        contatti_pagina.setOnClickListener(new View.OnClickListener() {
+        //final TextView contatti_pagina = binding.contattiPagina;
+        final TableRow row_contatti_pagina = binding.rowContattiPagina;
+        row_contatti_pagina.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Toast.makeText(getContext(), getText(R.string.contatti_pagina).toString(), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse(getString(R.string.contatti_pagina_url)));
                 startActivity(intent);
+            }
+        });
+
+        //final TextView contatti_address = binding.contattiAddress;
+        final TableRow row_contatti_address = binding.rowContattiAddress;
+        row_contatti_address.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View view) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(getString(R.string.contatti_address_url)));
+                startActivity(intent);
+                //Toast.makeText(getContext(), getText(R.string.contatti_address).toString(), Toast.LENGTH_SHORT).show();
+
             }
         });
 
@@ -78,25 +79,27 @@ public class ContactsFragment extends Fragment {
             }
         });
 
-        final TextView contatti_phone = binding.contattiPhone;
-        contatti_phone.setOnClickListener(new View.OnClickListener() {
+        //final TextView contatti_phone = binding.contattiPhone;
+        final TableRow row_contatti_phone = binding.rowContattiPhone;
+        row_contatti_phone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:"+getString(R.string.contatti_phone)));
+                intent.setData(Uri.parse("tel:" + getString(R.string.contatti_phone)));
                 startActivity(intent);
             }
         });
 
-        final TextView contatti_email = binding.contattiEmail;
-        contatti_email.setOnClickListener(new View.OnClickListener() {
+        //final TextView contatti_email = binding.contattiemail;
+        final TableRow row_contatti_email = binding.rowContattiEmail;
+        row_contatti_email.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
                 intent.setType("plain/text");
                 intent.putExtra(Intent.EXTRA_EMAIL, getString(R.string.contatti_email));
                 intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.contatti_email_subject));
-                intent.setData(Uri.parse("mailto:"));
+                intent.setData(Uri.parse("mailto:" + getString(R.string.contatti_email)));
                 startActivity(intent);
             }
         });
