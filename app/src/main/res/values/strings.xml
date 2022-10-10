@@ -6,6 +6,9 @@
     <string name="title_mission">Chi siamo</string>
     <string name="title_privacy">Privacy</string>
 
+    <string name="action_share">Condividi</string>
+    <string name="action_search">Cerca</string>
+
     <string name="contatti_email">info@iarosmolise.it</string>
     <string name="contatti_email_subject">Gestione contatto dall\'app</string>
     <string name="contatti_phone">0874418779</string>
@@ -15,5 +18,26 @@
     <string name="contatti_pagina_url">http://www.iarosinternational.com/</string>
     <string name="contatti_address">Via Leopardi, 235\n86100 Campobasso (CB)</string>
     <string name="contatti_address_url">https://www.google.com/maps?q=Via Leopardi, 235 86100 Campobasso (CB)</string>
+
+    <string name="intestazione_1">La nostra storia</string>
+    <string name="corpo_cardview_mission_1">Lo I.A.R.O.S. INTERNATIONAL (Istituto per l’Addestramento, la Ricerca, l’Organizzazione e lo Sviluppo), associazione senza fini di lucro, nasce il 16 ottobre 2006 da IAROS (Istituto di Addestramento e Ricerca per l’Organizzazione dei Sistemi riconosciuto quale ente a rilievo nazionale dalla legge n. 40 del 14/02/1987 ed accreditato presso la Regione Molise con D. D. n. 137 del 13/12/2003), Istituto che opera a livello nazionale dal 1978, con l’obiettivo strategico di allargare gli ambiti operativi oltre i confini nazionali e capitalizzando il bagaglio di esperienza di quest’ultimo nel campo della formazione e dell’orientamento ed opera a livello nazionale prevalentemente nell’ambito della formazione, dell’aggiornamento, della specializzazione, della riqualificazione professionale e della ricerca.\n
+Lo IAROS INTERNATIONAL ha conseguito la certificazione del Sistema di Gestione Aziendale ai sensi della norma UNI EN ISO 9001:2008 (certificato n. 0510 – 112-Q) per le attività di: Formazione Superiore, Obbligo Formativo e Formazione Continua.\n
+Lo IAROS INTERNATIONAL è accreditato presso la Regione Molise per lo svolgimento delle attività di formazione professionale con Determina Dirigenziale n. 3 del 28/01/2009.\n
+Lo IAROS INTERNATIONAL è iscritto all’Associazione Industriali del Molise nel settore: Terziario Avanzato.\n
+Lo IAROS INTERNATIONAL aderisce ad O. R. F. E. O. (Organismo bilaterale Paritetico regionale del Molise per la Formazione e l’Orientamento nell’Industria) costituito da Associazione Industriali del Molise, C.G.I.L., C.I.S.L., U.I.L.</string>
+<string name="intestazione_2">Aree professionali ed occupazionali di intervento</string>
+<string name="corpo_cardview_mission_2">– Organizzazione, comunicazione, amministrazione e finanza d’impresa, Pubblica Amministrazione\n
+– Information Communication Technology\n
+– Produzione e processi tecnici dell’industria e artigianato\n
+– Turismo, commercio e servizi, servizi alle persone e alla collettività, ambiente e beni culturali\n
+– Produzioni agricole e trasformazioni agroalimentari\n
+– Sicurezza e Sistemi di Qualità</string>
+<string name="intestazione_3">Attività dell\'istituto</string>
+<string name="corpo_cardview_mission_3">–Ricerche e studi elaborati e realizzati per identificare e adeguare i bisogni formativi alla domanda reale espressa dal mondo del lavoro a breve e medio termine e favorire così l’incremento dell’occupazione;\n
+– Progetti di formazione destinati a giovani diplomati e laureati in attesa di prima occupazione;\n
+– Progetti di riqualificazione professionale diretti a personale già inserito nel mondo del lavoro;\n
+– Progetti di formazione e aggiornamento dei formatori;\n
+– Progetti finalizzati all’aggiornamento e specializzazione professionale del personale tecnico e amministrativo (Dirigenti e Quadri) di organismi pubblici e privati;\n
+– Seminari su temi di particolare interesse e attualità in campo tecnico-scientifico, economico-finanziario, giuridico e legislativo"</string>
 
 </resources>
