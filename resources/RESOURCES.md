@@ -22,6 +22,7 @@
 * [CardView](https://developer.android.com/guide/topics/ui/layout/cardview)
 * [RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview)
 * [Intent Actions](https://developer.android.com/guide/components/intents-filters)
+* [Spinner - Loading UI Component](https://material.io/components/progress-indicators/android#using-progress-indicators)
 
 ## Material Theme
 
