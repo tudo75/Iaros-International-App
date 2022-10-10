@@ -21,7 +21,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-
+    
     <style name="Theme.IarosInternational.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.IarosInternational.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
