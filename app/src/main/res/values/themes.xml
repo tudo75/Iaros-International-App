@@ -72,6 +72,13 @@
 
     <style name="Theme.IarosInternational.Text.title_mission"
         parent="Theme.IarosInternational.Text.title_page">
+        <item name="android:paddingHorizontal">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:padding">8dp</item>
+
     </style>
 
     <style name="Theme.IarosInternational.Text.title_privacy"

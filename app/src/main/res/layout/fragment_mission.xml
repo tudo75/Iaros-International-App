@@ -45,8 +45,12 @@
                         style="@style/Theme.IarosInternational.Text.title_mission"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingVertical="0dp"
+                        android:background="@color/green_light"
                         android:text="@string/intestazione_1" />
+
+                    <View
+                        style="@style/Theme.IarosInternational.Divider"
+                        android:layout_weight="1" />
 
                     <TextView
                         android:id="@+id/textView3"
@@ -73,7 +77,12 @@
                         style="@style/Theme.IarosInternational.Text.title_mission"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@color/green_light"
                         android:text="@string/intestazione_2" />
+
+                    <View
+                        style="@style/Theme.IarosInternational.Divider"
+                        android:layout_weight="1" />
 
                     <TextView
                         android:id="@+id/corpo_messaggio"
@@ -100,14 +109,18 @@
                         style="@style/Theme.IarosInternational.Text.title_mission"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@color/green_light"
                         android:text="@string/intestazione_3" />
+
+                    <View
+                        style="@style/Theme.IarosInternational.Divider"
+                        android:layout_weight="1" />
 
                     <TextView
                         android:id="@+id/textView2"
                         style="@style/Theme.IarosInternational.Text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:justificationMode="inter_word"
                         android:text="@string/corpo_cardview_mission_3" />
                 </LinearLayout>
 
