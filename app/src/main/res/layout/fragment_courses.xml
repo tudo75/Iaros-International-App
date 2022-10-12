@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingStart="@dimen/main_padding_start"
+    android:paddingTop="@dimen/main_padding_top"
+    android:paddingEnd="@dimen/main_padding_end"
+    android:paddingBottom="@dimen/main_padding_bottom"
     tools:context=".ui.courses.CoursesFragment">
 
     <ProgressBar
