@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Theme.IarosInternational.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:id="@+id/coursesTableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                style="@style/Theme.IarosInternational.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fi_rs_book_bookmark" />
+
+            <TextView
+                android:id="@+id/coursesTitoloItemRW"
+                style="@style/Theme.IarosInternational.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/coursesTableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View style="@style/Theme.IarosInternational.Divider"
+                android:layout_span="3"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/coursesTableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                style="@style/Theme.IarosInternational.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fi_rs_calendar" />
+
+            <TextView
+                android:id="@+id/coursesDataItemRW"
+                style="@style/Theme.IarosInternational.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_span="2"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/coursesTableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View style="@style/Theme.IarosInternational.Divider"
+                android:layout_span="3"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/coursesTableRowSchedaCorso"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                style="@style/Theme.IarosInternational.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fi_rs_angle_right" />
+
+            <TextView
+                android:id="@+id/coursesSchedaCorsoItemRW"
+                style="@style/Theme.IarosInternational.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                style="@style/Theme.IarosInternational.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fi_rs_angle_right" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/coursesTableDivider1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View style="@style/Theme.IarosInternational.Divider"
+                android:layout_span="3"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/coursesTableRowSchedaBando"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                style="@style/Theme.IarosInternational.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fi_rs_angle_right" />
+
+            <TextView
+                android:id="@+id/coursesSchedaBandoItemRW"
+                style="@style/Theme.IarosInternational.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                style="@style/Theme.IarosInternational.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fi_rs_angle_right" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/coursesTableDivider2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View style="@style/Theme.IarosInternational.Divider"
+                android:layout_span="3"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/coursesTableRowSchedaIscrizione"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                style="@style/Theme.IarosInternational.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fi_rs_angle_right" />
+
+            <TextView
+                android:id="@+id/coursesSchedaIscrizioneItemRW"
+                style="@style/Theme.IarosInternational.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                style="@style/Theme.IarosInternational.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fi_rs_angle_right" />
+
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.cardview.widget.CardView>
