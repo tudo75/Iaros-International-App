@@ -5,13 +5,20 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.SearchView;
+import androidx.core.view.MenuProvider;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -33,7 +40,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CoursesFragment extends Fragment implements JsonTask.AsyncResponse, SwipeRefreshLayout.OnRefreshListener {
+public class CoursesFragment extends Fragment implements JsonTask.AsyncResponse, SwipeRefreshLayout.OnRefreshListener, MenuProvider {
 
     private ArrayList<Corso> corsoList;
     private RecyclerView recyclerView;
@@ -49,6 +56,8 @@ public class CoursesFragment extends Fragment implements JsonTask.AsyncResponse,
 
         binding = FragmentCoursesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        this.getActivity().addMenuProvider(this, getViewLifecycleOwner());
 
         corsoList = new ArrayList<Corso>();
 
@@ -145,5 +154,48 @@ public class CoursesFragment extends Fragment implements JsonTask.AsyncResponse,
     @Override
     public void onRefresh() {
         new JsonTask(this).execute(JSON_URL_CORSI);
+    }
+
+    @Override
+    public void onCreateMenu(@NonNull Menu menu, @NonNull MenuInflater menuInflater) {
+        menuInflater.inflate(R.menu.menu_search, menu);
+    }
+
+    @Override
+    public boolean onMenuItemSelected(@NonNull MenuItem menuItem) {
+        if (menuItem.getItemId() == R.id.action_search) {
+            SearchView searchView = (SearchView) menuItem.getActionView();
+            searchView.setImeOptions(EditorInfo.IME_ACTION_DONE);
+            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                @Override
+                public boolean onQueryTextSubmit(String query) {
+                    return false;
+                }
+                @Override
+                public boolean onQueryTextChange(String newText) {
+                    if (!newText.equals("")) {
+                        ArrayList<Corso> searchList = new ArrayList<Corso>();
+                        for (int i = 0; i < corsoList.size(); i++) {
+                            Corso tempCorso = corsoList.get(i);
+                            if (tempCorso.getTitolo().toLowerCase().contains(newText.toLowerCase())) {
+                                searchList.add(tempCorso);
+                            }
+
+
+                        }
+                        mAdapter.setFilter(searchList);
+                    } else {
+                        //mAdapter.setFilter(corsoList);
+                    }
+                    //Toast.makeText(getContext(), newText, Toast.LENGTH_SHORT).show();
+                    return false;
+                }
+            });
+
+            return true;
+        }
+
+
+        return false;
     }
 }
