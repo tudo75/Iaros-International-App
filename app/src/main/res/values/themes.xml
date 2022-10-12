@@ -21,7 +21,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-
+    
     <style name="Theme.IarosInternational.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.IarosInternational.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
@@ -72,6 +72,13 @@
 
     <style name="Theme.IarosInternational.Text.title_mission"
         parent="Theme.IarosInternational.Text.title_page">
+        <item name="android:paddingHorizontal">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:padding">8dp</item>
+
     </style>
 
     <style name="Theme.IarosInternational.Text.title_privacy"
@@ -80,7 +87,8 @@
 
     <style name= "Theme.IarosInternational.CardView" parent="CardView">
         <item name="cardCornerRadius">@dimen/card_corner_radius</item>
-        <item name="android:layout_margin">@dimen/card_margin</item>
+        <item name="android:layout_marginHorizontal">@dimen/card_margin_horizontal</item>
+        <item name="android:layout_marginVertical">@dimen/card_margin_vertical</item>
         <item name="contentPadding">@dimen/card_padding</item>
         <item name="cardElevation">@dimen/card_elevation</item>
     </style>

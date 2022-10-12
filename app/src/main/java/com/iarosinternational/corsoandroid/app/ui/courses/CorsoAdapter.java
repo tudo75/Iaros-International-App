@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -52,10 +53,20 @@ public class CorsoAdapter extends RecyclerView.Adapter<CorsoAdapter.ListItemHold
         holder.mSchedaBando.setText(corso.getSchedaBando());
         holder.mSchedaIscrizione.setText(corso.getSchedaIscrizione());
 
+        // imposto le righe cliccabili come visibili
+        holder.mTableRowSchedaCorso.setVisibility(View.VISIBLE);
+        holder.mTableRowSchedaBando.setVisibility(View.VISIBLE);
+        holder.mTableRowSchedaIscrizione.setVisibility(View.VISIBLE);
+
+        // imposto i divider tra le righe cliccabili come visibili
+        holder.mTableRowDivider1.setVisibility(View.VISIBLE);
+        holder.mTableRowDivider2.setVisibility(View.VISIBLE);
+
         if (corso.getSchedaCorsoUrl().equals("")) {
-            holder.mSchedaCorso.setVisibility(View.GONE);
+            holder.mTableRowSchedaCorso.setVisibility(View.GONE);
+            holder.mTableRowDivider1.setVisibility(View.GONE);
         } else {
-            holder.mSchedaCorso.setOnClickListener(new Button.OnClickListener() {
+            holder.mTableRowSchedaCorso.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
                     Intent i = new Intent(Intent.ACTION_VIEW);
                     i.setData(Uri.parse(corso.getSchedaCorsoUrl()));
@@ -65,9 +76,10 @@ public class CorsoAdapter extends RecyclerView.Adapter<CorsoAdapter.ListItemHold
         }
 
         if (corso.getSchedaBandoUrl().equals("")) {
-            holder.mSchedaBando.setVisibility(View.GONE);
+            holder.mTableRowSchedaBando.setVisibility(View.GONE);
+            holder.mTableRowDivider2.setVisibility(View.GONE);
         } else {
-            holder.mSchedaBando.setOnClickListener(new Button.OnClickListener() {
+            holder.mTableRowSchedaBando.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
                     Intent i = new Intent(Intent.ACTION_VIEW);
                     i.setData(Uri.parse(corso.getSchedaBandoUrl()));
@@ -77,9 +89,10 @@ public class CorsoAdapter extends RecyclerView.Adapter<CorsoAdapter.ListItemHold
         }
 
         if (corso.getSchedaIscrizioneUrl().equals("")) {
-            holder.mSchedaIscrizione.setVisibility(View.GONE);
+            holder.mTableRowSchedaIscrizione.setVisibility(View.GONE);
+            holder.mTableRowDivider2.setVisibility(View.GONE);
         } else {
-            holder.mSchedaIscrizione.setOnClickListener(new Button.OnClickListener() {
+            holder.mTableRowSchedaIscrizione.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
                     Intent i = new Intent(Intent.ACTION_VIEW);
                     i.setData(Uri.parse(corso.getSchedaIscrizioneUrl()));
@@ -95,13 +108,24 @@ public class CorsoAdapter extends RecyclerView.Adapter<CorsoAdapter.ListItemHold
         return mCorsoList.size();
     }
 
+    public void setFilter (ArrayList<Corso> searchResultList) {
+        mCorsoList.clear();
+        mCorsoList.addAll(searchResultList);
+        notifyDataSetChanged();
+    }
+
     public class ListItemHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView mTitolo;
         TextView mDataConsegnaModuli;
-        Button mSchedaCorso;
-        Button mSchedaBando;
-        Button mSchedaIscrizione;
+        TextView mSchedaCorso;
+        TextView mSchedaBando;
+        TextView mSchedaIscrizione;
+        TableRow mTableRowSchedaCorso;
+        TableRow mTableRowSchedaBando;
+        TableRow mTableRowSchedaIscrizione;
+        TableRow mTableRowDivider1;
+        TableRow mTableRowDivider2;
 
         public ListItemHolder(View view) {
             super(view);
@@ -110,6 +134,12 @@ public class CorsoAdapter extends RecyclerView.Adapter<CorsoAdapter.ListItemHold
             mSchedaCorso = view.findViewById(R.id.coursesSchedaCorsoItemRW);
             mSchedaBando = view.findViewById(R.id.coursesSchedaBandoItemRW);
             mSchedaIscrizione = view.findViewById(R.id.coursesSchedaIscrizioneItemRW);
+
+            mTableRowSchedaCorso  = view.findViewById(R.id.coursesTableRowSchedaCorso);
+            mTableRowSchedaBando  = view.findViewById(R.id.coursesTableRowSchedaBando);
+            mTableRowSchedaIscrizione  = view.findViewById(R.id.coursesTableRowSchedaIscrizione);
+            mTableRowDivider1  = view.findViewById(R.id.coursesTableDivider1);
+            mTableRowDivider2  = view.findViewById(R.id.coursesTableDivider2);
 
             //view.setClickable(true);
             //view.setOnClickListener(this);

@@ -34,12 +34,15 @@ public class HomeFragment extends Fragment implements JsonTask.AsyncResponse, Sw
     private RecyclerView contenitore_news;
     private NewsAdapter news_adapter;
     private ProgressBar newsSpinner;
+    private SwipeRefreshLayout newsSwipeRefresh;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        newsSwipeRefresh = binding.newsSwipeRefresh;
 
         newsList = new ArrayList<News>();
 
@@ -50,7 +53,8 @@ public class HomeFragment extends Fragment implements JsonTask.AsyncResponse, Sw
          2) Passareal recyclerview la lista popolo news
          */
 
-        binding.newsSwipeRefresh.setOnRefreshListener(HomeFragment.this);
+
+        newsSwipeRefresh.setOnRefreshListener(HomeFragment.this);
 
         contenitore_news = binding.contenitoreNews;
         news_adapter = new NewsAdapter(newsList);
@@ -101,7 +105,7 @@ public class HomeFragment extends Fragment implements JsonTask.AsyncResponse, Sw
             }
 
             news_adapter.notifyDataSetChanged();
-            binding.newsSwipeRefresh.setRefreshing(false);
+            newsSwipeRefresh.setRefreshing(false);
 
             newsSpinner.setVisibility(View.GONE);
             contenitore_news.setVisibility(View.VISIBLE);
