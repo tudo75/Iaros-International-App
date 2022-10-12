@@ -53,6 +53,15 @@ public class CorsoAdapter extends RecyclerView.Adapter<CorsoAdapter.ListItemHold
         holder.mSchedaBando.setText(corso.getSchedaBando());
         holder.mSchedaIscrizione.setText(corso.getSchedaIscrizione());
 
+        // imposto le righe cliccabili come visibili
+        holder.mTableRowSchedaCorso.setVisibility(View.VISIBLE);
+        holder.mTableRowSchedaBando.setVisibility(View.VISIBLE);
+        holder.mTableRowSchedaIscrizione.setVisibility(View.VISIBLE);
+
+        // imposto i divider tra le righe cliccabili come visibili
+        holder.mTableRowDivider1.setVisibility(View.VISIBLE);
+        holder.mTableRowDivider2.setVisibility(View.VISIBLE);
+
         if (corso.getSchedaCorsoUrl().equals("")) {
             holder.mTableRowSchedaCorso.setVisibility(View.GONE);
             holder.mTableRowDivider1.setVisibility(View.GONE);
