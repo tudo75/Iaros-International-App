@@ -1,19 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.privacy.PrivacyFragment">
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="44.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:paddingVertical="8.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@+id/imageView2" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/fi_rs_shield_exclamation" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:id="@+id/privacy_main_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/privacy_main_title" style="@style/Theme.IarosInternational.Text.title_privacy" />
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Theme.IarosInternational.CardView">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
 
-    <TextView
-        android:id="@+id/text_privacy"
-        style="@style/Theme.IarosInternational.Text.title_privacy"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+                        <ImageView
+                            android:id="@id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6.0dip"
+                            android:src="@drawable/fi_rs_shield_exclamation"
+                            android:tint="@color/blu_iaros" />
+                        <TextView android:id="@+id/privacy_titolo_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_titolo_punto_1" style="@style/Theme.IarosInternational.Text.title_privacy" />
+                    </LinearLayout>
 
+                    <TextView
+                        android:id="@+id/privacy_testo_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:text="@string/privacy_testo_punto_1" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Theme.IarosInternational.CardView">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6.0dip"
+                            android:src="@drawable/fi_rs_shield_exclamation"
+                            android:tint="@color/blu_iaros" />
+                        <TextView android:id="@+id/privacy_titolo_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_titolo_punto_2" style="@style/Theme.IarosInternational.Text.title_privacy" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/privacy_testo_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:text="@string/privacy_testo_punto_2" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Theme.IarosInternational.CardView">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6.0dip"
+                            android:src="@drawable/fi_rs_shield_exclamation"
+                            android:tint="@color/blu_iaros" />
+                        <TextView android:id="@+id/privacy_titolo_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_titolo_punto_3" style="@style/Theme.IarosInternational.Text.title_privacy" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/privacy_testo_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:justificationMode="inter_word"
+                        android:text="@string/privacy_testo_punto_3" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Theme.IarosInternational.CardView">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6dp"
+                            android:src="@drawable/fi_rs_shield_exclamation"
+                            android:tint="@color/blu_iaros" />
+                        <TextView android:gravity="center" android:id="@+id/privacy_titolo_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_titolo_punto_4" style="@style/Theme.IarosInternational.Text.title_privacy" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/privacy_testo_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:text="@string/privacy_testo_punto_4" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Theme.IarosInternational.CardView">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6.0dip"
+                            android:src="@drawable/fi_rs_shield_exclamation"
+                            android:tint="@color/blu_iaros" />
+                        <TextView android:gravity="center" android:id="@+id/privacy_titolo_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_titolo_punto_5" style="@style/Theme.IarosInternational.Text.title_privacy" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/privacy_testo_5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:justificationMode="inter_word"
+                        android:text="@string/privacy_testo_punto_5" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Theme.IarosInternational.CardView">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/fi_rs_shield_exclamation"
+                            android:tint="@color/blu_iaros" />
+                        <TextView android:gravity="center" android:id="@+id/privacy_titolo_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_titolo_punto_6" style="@style/Theme.IarosInternational.Text.title_privacy" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/privacy_testo_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:text="@string/privacy_testo_punto_6" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,9 @@
     <string name="title_mission">Chi siamo</string>
     <string name="title_privacy">Privacy</string>
 
+    <string name="action_share">Condividi</string>
+    <string name="action_search">Cerca</string>
+
     <string name="contatti_email">info@iarosmolise.it</string>
     <string name="contatti_email_subject">Gestione contatto dall\'app</string>
     <string name="contatti_phone">0874418779</string>
@@ -16,4 +19,39 @@
     <string name="contatti_address">Via Leopardi, 235\n86100 Campobasso (CB)</string>
     <string name="contatti_address_url">https://www.google.com/maps?q=Via Leopardi, 235 86100 Campobasso (CB)</string>
 
+    <string name="intestazione_1">La nostra storia</string>
+    <string name="corpo_cardview_mission_1">Lo I.A.R.O.S. INTERNATIONAL (Istituto per l’Addestramento, la Ricerca, l’Organizzazione e lo Sviluppo), associazione senza fini di lucro, nasce il 16 ottobre 2006 da IAROS (Istituto di Addestramento e Ricerca per l’Organizzazione dei Sistemi riconosciuto quale ente a rilievo nazionale dalla legge n. 40 del 14/02/1987 ed accreditato presso la Regione Molise con D. D. n. 137 del 13/12/2003), Istituto che opera a livello nazionale dal 1978, con l’obiettivo strategico di allargare gli ambiti operativi oltre i confini nazionali e capitalizzando il bagaglio di esperienza di quest’ultimo nel campo della formazione e dell’orientamento ed opera a livello nazionale prevalentemente nell’ambito della formazione, dell’aggiornamento, della specializzazione, della riqualificazione professionale e della ricerca.\n
+Lo IAROS INTERNATIONAL ha conseguito la certificazione del Sistema di Gestione Aziendale ai sensi della norma UNI EN ISO 9001:2008 (certificato n. 0510 – 112-Q) per le attività di: Formazione Superiore, Obbligo Formativo e Formazione Continua.\n
+Lo IAROS INTERNATIONAL è accreditato presso la Regione Molise per lo svolgimento delle attività di formazione professionale con Determina Dirigenziale n. 3 del 28/01/2009.\n
+Lo IAROS INTERNATIONAL è iscritto all’Associazione Industriali del Molise nel settore: Terziario Avanzato.\n
+Lo IAROS INTERNATIONAL aderisce ad O. R. F. E. O. (Organismo bilaterale Paritetico regionale del Molise per la Formazione e l’Orientamento nell’Industria) costituito da Associazione Industriali del Molise, C.G.I.L., C.I.S.L., U.I.L.</string>
+<string name="intestazione_2">Aree professionali ed occupazionali di intervento</string>
+<string name="corpo_cardview_mission_2">– Organizzazione, comunicazione, amministrazione e finanza d’impresa, Pubblica Amministrazione\n
+– Information Communication Technology\n
+– Produzione e processi tecnici dell’industria e artigianato\n
+– Turismo, commercio e servizi, servizi alle persone e alla collettività, ambiente e beni culturali\n
+– Produzioni agricole e trasformazioni agroalimentari\n
+– Sicurezza e Sistemi di Qualità</string>
+<string name="intestazione_3">Attività dell\'istituto</string>
+<string name="corpo_cardview_mission_3">–Ricerche e studi elaborati e realizzati per identificare e adeguare i bisogni formativi alla domanda reale espressa dal mondo del lavoro a breve e medio termine e favorire così l’incremento dell’occupazione;\n
+– Progetti di formazione destinati a giovani diplomati e laureati in attesa di prima occupazione;\n
+– Progetti di riqualificazione professionale diretti a personale già inserito nel mondo del lavoro;\n
+– Progetti di formazione e aggiornamento dei formatori;\n
+– Progetti finalizzati all’aggiornamento e specializzazione professionale del personale tecnico e amministrativo (Dirigenti e Quadri) di organismi pubblici e privati;\n
+– Seminari su temi di particolare interesse e attualità in campo tecnico-scientifico, economico-finanziario, giuridico e legislativo"</string>
+
+
+    <string name="privacy_main_title">INFORMATIVA RIGUARDO AL TRATTAMENTO DEI DATI PERSONALI (ART. 13 REG. UE 2016/679</string>
+    <string name="privacy_testo_punto_1">"Il titolare del trattamento è la persona che legge quanto scritto nell'applicazione"</string>
+    <string name="privacy_titolo_punto_1">1 - Titolare del trattamento</string>
+    <string name="privacy_testo_punto_2">"I dati personali forniti sono necessari ai fini della conclusione e della gestione del rapporto di incarico professionale, per gli adempimenti di legge previsti per lo svolgimento dell'attività di consulenza fiscale."</string>
+    <string name="privacy_titolo_punto_2">2 - Finalità del trattamento</string>
+    <string name="privacy_testo_punto_3">Il trattamento dei dati da Lei forniti è svolto sia in forma automatizzata sia in forma manuale nel rispetto diquanto previsto dall/art. 32 del G.D.P.R. 2016/679, ad opera di soggetti appositamente incaricati e inottemperanza a quanto previsto dall/art 29 del G.D.P.R. 2016/679. Le segnaliamo che, nel rispetto deiprincipi di liceità, limitazione delle finalità e minimizzazione dei dati, ai sensi dell/art. 5 del G.D.P.R.2016/679, previo il Suo consenso libero ed esplicito espresso nell/allegato alla presente informativa, i suoidati personali saranno conservati per il periodo di tempo necessario per il conseguimento delle finalità per lequali sono raccolti e trattati e comunque non oltre i termini stabiliti dalle normative fiscali, normative del lavoro e previdenziali e dal codice civile in materia e per ulteriori dieci anni.</string>
+    <string name="privacy_testo_punto_4">La informiamo, inoltre, che i dati raccolti non saranno mai diffusi e non saranno oggetto di comunicazione senza il Suo esplicito consenso, salvo le comunicazioni necessarie che possono comportare il trasferimentodi dati ad enti pubblici, a consulenti o ad altri soggetti per l/adempimento degli obblighi di legge. Inoltre tali dati potranno essere conosciuti, nei limiti della normativa vigente da dipendenti e/o collaboratoriespressamente nominati ed incaricati dal Titolare.</string>
+    <string name="privacy_testo_punto_5">Ai sensi degli articoli 9 e 10 del G.D.P.R. 2016/679, Lei potrebbe conferire alla nostra organizzazione dati qualificabili come “categorie particolari di dati personali” e cioè quei dati che rivelano “l/origine razziale oetnica, le opinioni politiche, le convenzioni religiose o filosofiche, o l/appartenenza sindacale, nonché datigenetici, dati biometrici intesi a identificare in modo univoco una persona fisica, dati relativi alla salute o allavita sessuale o all/orientamento sessuale della persona” tali categorie di dati potranno essere trattate soloprevio ed esplicito consenso, manifestato in forma scritta in allegato alla presente informativa.</string>
+    <string name="privacy_testo_punto_6">In relazione ai dati oggetto del trattamento di cui alla presente informativa all/interessato è riconosciuto inqualsiasi momento il diritto di: Accesso (art. 15 Regolamento UE n. 2016/679);Rettifica (art. 16 Regolamento UE n. 2016/679); Cancellazione (art. 17 Regolamento UE n. 2016/679); Limitazione (art.18 Regolamento UE n. 2016/679); Portabilità, intesa come diritto ad ottenere dal titolare del trattamento i dati in formato strutturato di uso comune e leggibile da dispositivo automatico per trasmetterli ad un altro titolare del trattamento senza impedimenti (art. 20 Regolamento UE n. 2016/679); Opposizione al trattamento (art. 21 Regolamento UE n. 2016/679); Revoca del consenso al trattamento, senza pregiudizio per la liceità del trattamento basata sul consenso acquisito prima della revoca (art. 7, par. 3 Regolamento UE n. 2016/679); Proporre reclamo all/Autorità Garante per la Protezione dei dati personali (art. 51 Reg-UEn. 2016/679).</string>
+    <string name="privacy_titolo_punto_3">3 - Modalità di trattamento e conservazione dei dati.</string>
+    <string name="privacy_titolo_punto_4">4 - Ambito di comunicazione e diffusione.</string>
+    <string name="privacy_titolo_punto_5">5 - Categorie particolari di dati personali.</string>
+    <string name="privacy_titolo_punto_6">6 - Diritti dell/interessato.</string>
 </resources>
